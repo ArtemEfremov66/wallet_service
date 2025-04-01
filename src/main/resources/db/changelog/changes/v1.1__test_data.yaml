@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.1
+      author: your_name
+      changes:
+        - insert:
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  value: "8a8a8a8a-8a8a-8a8a-8a8a-8a8a8a8a8a8a"
+              - column:
+                  name: balance
+                  value: "100000"
+              - column:
+                  name: version
+                  value: "0"
+              - column:
+                  name: created_at
+                  valueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: updated_at
+                  valueComputed: CURRENT_TIMESTAMP
+
+        - insert:
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  value: "9b9b9b9b-9b9b-9b9b-9b9b-9b9b9b9b9b9b"
+              - column:
+                  name: balance
+                  value: "50000"
+              - column:
+                  name: version
+                  value: "0"
+              - column:
+                  name: created_at
+                  valueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: updated_at
+                  valueComputed: CURRENT_TIMESTAMP
